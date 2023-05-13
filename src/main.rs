@@ -1,6 +1,6 @@
-const DYN_NUMBER: Option<&'static str> = option_env!("DYN_NUMBER");
+const DYN_MAGIC_NUMBER: Option<&'static str> = option_env!("DYN_MAGIC_NUMBER");
 
 fn main() {
     println!("Hello, world!");
-    println!("{DYN_NUMBER:?}");
+    println!("{DYN_MAGIC_NUMBER:?}");
 }
