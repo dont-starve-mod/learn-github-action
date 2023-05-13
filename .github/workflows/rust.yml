@@ -8,7 +8,7 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
-  DYN_MAGIC_NUMBER: ${{ secrets.DYN_MAGIC_NUMBER }} # a secret number to parse *.dyn file, defined in github
+  DYN_MAGIC_NUMBER: ${{ variables.DYN_MAGIC_NUMBER }} # a secret number to parse *.dyn file, defined in github
 
 jobs:
   build:
