@@ -29,7 +29,9 @@ jobs:
 
       - name: Build
         # run: cargo build --release --verbose
-        run: cargo run
+        run: |
+          cargo run
+          cargo build --release
 
       - name: Release
         uses: softprops/action-gh-release@v1
